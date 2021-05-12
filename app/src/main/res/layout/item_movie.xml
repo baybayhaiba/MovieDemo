@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <com.skydoves.transformationlayout.TransformationLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/item_poster_transformationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:transformation_direction="auto"
+        app:transformation_duration="500">
+
+        <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cvMovies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16sp"
+            app:cardCornerRadius="10sp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imgMovies"
+                        android:layout_width="match_parent"
+                        android:layout_height="250sp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_launcher_background" />
+
+                    <FrameLayout
+                        android:layout_width="90sp"
+                        android:layout_height="90sp"
+                        android:layout_alignParentEnd="true"
+                        android:padding="20sp">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:alpha="0.4"
+                            android:background="@drawable/background_alpha_favorite" />
+
+                        <ImageView
+                            android:id="@+id/imgFavorite"
+                            android:layout_width="20sp"
+                            android:layout_height="20sp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_baseline_favorite_border_24" />
+
+                    </FrameLayout>
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:fontFamily="monospace"
+                    android:gravity="center"
+                    android:text="Cuộc cchien61 huy diet"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </com.skydoves.transformationlayout.TransformationLayout>
+</layout>
